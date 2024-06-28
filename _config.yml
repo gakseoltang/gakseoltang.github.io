@@ -1,12 +1,10 @@
 # Base blog settings
-baseurl                      : "" # the subpath of your site,                         # e.g. /blog/
-                              # set to '' in case of hosting on GitHub
-url                          : "" # the base hostname & protocol for your site
-                                  # `http://<username>.github.io` - for GitHub
+baseurl                      : "" # the subpath of your site, e.g. /blog/
+url                          : "" # the base hostname & protocol for your site, e.g. `http://<username>.github.io` - for GitHub
 
 blog:
   title                      : donghunholic
-  description                  : >
+  description                : >
                                this should contain a proper description
 
 # Layout configuration
@@ -23,11 +21,10 @@ blog:
   font                       : '"Rubik", -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif'
   load_google_fonts          : 'Rubik:400,400italic,700,700italic'
 
-
 # Author info
 author:
   fullname                  : Donghun Shin
-#  rss                       : true # generate RSS feed and show it's icon in header
+#  rss                       : true # generate RSS feed and show its icon in header
   mail                      : sdh728@postech.ac.kr
 #  twitter                   : twitter-user-name
   github                    : donghunholic
@@ -38,13 +35,10 @@ author:
 #  photo                     : "uploads/me2.png"
 #  photo2x                   : "uploads/me.png"
 
-
-
-## !!
 ## Advanced blog settings
 ## You should not change anything here unless you know what you are doing
 
-# Gems
+# Plugins
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
@@ -53,7 +47,7 @@ plugins:
 permalink                    : posts/:slug
 
 # Posts
-excerpt_separator            : <!–-break-–>
+excerpt_separator            : "<!--break-->"
 
 # Pagination
 paginate                     : 5
@@ -73,38 +67,13 @@ defaults:
       layout: blog-by-tag
 
 # Handling Reading
-exclude                    : ["README.md", "README.html"]
+exclude                      : ["README.md", "README.html"]
 
-# https://github.com/jekyll/jekyll/issues/4619
 # Markdown and highlighter settings
 markdown: kramdown
-# !github-pages! mandatory › https://help.github.com/articles/using-jekyll-with-pages/#configuration-settings-you-cannot-change
-# Since Jekyll 3 the default highlighter is Rouge (replaced Pygments.rb in v44)
 highlighter: rouge
-lsi: false
-excerpt_separator: false
-incremental: false
 
-# More › http://kramdown.gettalong.org/quickref.html
-# Options › http://kramdown.gettalong.org/options.html
-# kramdown:
-#   input:          GFM
-#   # https://github.com/jekyll/jekyll/pull/4090
-#   math_engine: mathjax
-#   syntax_highlighter: rouge
-
-#   # Rouge Highlighter in Kramdown › http://kramdown.gettalong.org/syntax_highlighter/rouge.html
-#   # span, block element options fall back to global
-#   syntax_highlighter_opts:
-#     # Rouge Options › https://github.com/jneen/rouge#full-options
-#     # css_class: 'highlight'
-#     #line_numbers: true # bad idea, spans don't need linenos and would inherit this option
-#     span:
-#       line_numbers: false
-#     block:
-#       line_numbers: true
-#       start_line: 1
-
+# Kramdown settings
 kramdown:
   input: GFM
   hard_wrap: false
@@ -122,8 +91,6 @@ kramdown:
   auto_ids: true
   enable_coderay: false
   ignore_errors: false
-  parse_block_html: true
-  parse_span_html: true
   template: GFM
 
 # Sass settings
@@ -141,10 +108,3 @@ compress_html:
   profile                 : false
   ignore:
   envs                    : [local]
-
-# Math equation
-markdown: kramdown
-highlighter: rouge
-lsi: false
-excerpt_separator: "\n\n"
-incremental: false
