@@ -10,7 +10,7 @@ blog:
                                this should contain a proper description
 
 # Layout configuration
-  logo_path                  : "assets/img/dactl.svg" # path to logo file
+  logo_path                  : #"assets/img/dactl.svg" # path to logo file
   search_path                : # "yourgitusername.github.io"
                                # needed for searchbox in archive page
   hero_layout                : true # turn on hero layout for blog and posts
@@ -82,7 +82,7 @@ markdown: kramdown
 # Since Jekyll 3 the default highlighter is Rouge (replaced Pygments.rb in v44)
 highlighter: rouge
 lsi: false
-excerpt_separator: false
+#excerpt_separator: false
 incremental: false
 
 # More › http://kramdown.gettalong.org/quickref.html
