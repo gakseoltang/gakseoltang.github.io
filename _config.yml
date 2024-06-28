@@ -90,6 +90,7 @@ incremental: false
 kramdown:
   input:          GFM
   # https://github.com/jekyll/jekyll/pull/4090
+  math_engine: mathjax
   syntax_highlighter: rouge
 
   # Rouge Highlighter in Kramdown › http://kramdown.gettalong.org/syntax_highlighter/rouge.html
