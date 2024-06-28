@@ -5,6 +5,9 @@
   {% if site.blog.hero_layout == true %}
   {% include utils/hero.html %}
   {% endif %}
+  {% if page.use_math %}
+  {% include mathjax_support.html %}
+  {% endif %}
 
   <!-- Post title (& hero image) container -->
   <div class="post-title-container
