@@ -3,7 +3,7 @@ baseurl                      : "" # the subpath of your site, e.g. /blog/
 url                          : "" # the base hostname & protocol for your site, e.g. `http://<username>.github.io` - for GitHub
 
 blog:
-  title                      : donghunholic
+  title                      : Gakseoltang
   description                : >
                                this should contain a proper description
 
